@@ -1,4 +1,8 @@
 # login
+- Spring
+- mybatis
+- mysql
+- thymeleaf
 
 [2020-01-12]
 - spring security 이용하여 로그인, 회원가입, 권한 설정
