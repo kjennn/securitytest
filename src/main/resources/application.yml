@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  
+spring: 
+  thymeleaf:
+    enabled: true
+    prefix: classpath:templates/
+    check-template-location: true
+    suffix: .html
+    mode: HTML5
+    cache: false
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://127.0.0.1:3306/test
+    username: root
+    password: 980318it1451
+        
+mybatis:
+  config-location: classpath:sqlmap/sqlmap-config.xml
+  mapper-locations: classpath*:sqlmap/mappers/**/*.xml
+  type-aliases-package: com.gsitm.career
